@@ -12,34 +12,40 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--              Хедер навигация            -->
     <header class="header">
-      <nav class="header-navigation">
-        <a href="index.html" class="header-logo link accent"
-          >Web<span class="header-logo-text">Studio</span></a
-        >
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link currentLink" href="./index.html"
-              >Студия</a
-            >
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="index.html" class="header-logo link accent"
+            >Web<span class="header-logo-text">Studio</span></a
+          >
+          <ul class="header-list list header-container">
+            <li class="header-item">
+              <a class="header-link link currentLink" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <!--             хедер контакты                    -->
 
       <a
-        class="header-contacts-link link accent"
+        class="header-contacts-link link accent container"
         href="mailto:info@devstudio.com"
         >info@devstudio.com</a
       >
@@ -51,7 +57,7 @@
     <!--                  главная часть                   -->
 
     <main>
-      <section class="hero">
+      <section class="hero container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="header-btn btn" type="button">Заказать услугу</button>
       </section>
