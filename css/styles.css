@@ -8,6 +8,7 @@
   --header-text-color: #212121;
 }
 
+/* ---------- Сброс некоторых стилей ---------- */
 p,
 h1,
 h2,
@@ -23,6 +24,10 @@ ul {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -34,17 +39,32 @@ body {
   /* background: #757575; */
 }
 
-.container {
-  margin: 0 auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .header-container {
   display: flex;
   align-items: center;
-  background: center green;
+  /* background: center green; */
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.header-list {
+  display: flex;
+
+  /* align-items: center; */
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-contact {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .header-link {
@@ -69,6 +89,10 @@ body {
   color: #000000;
 }
 
+.header-logo {
+  margin-right: 93px;
+}
+
 .header-logo-text {
   color: var(--header-text-color);
 }
@@ -85,14 +109,16 @@ body {
   color: var(--accent-color);
 }
 
-/* ---------- Button ---------- */
-
 .header-contacts-link {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+.header-contacts-link:not(:last-child) {
+  margin-right: 40px;
 }
 
 .header-contacts-link:hover,
@@ -110,24 +136,38 @@ body {
   color: var(--accent-color);
 }
 
+/* ---------- Container ---------- */
+
+.container {
+  /* background-color: salmon; */
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* ---------- Button ---------- */
+
 .btn {
+  padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
   letter-spacing: 0.06em;
   background: var(--accent-color);
   border: none;
   border-radius: 4px;
-  max-width: 200px;
-  height: 50px;
+  /* max-width: 200px; */
+  /* height: 50px; */
 }
 
 .header-btn {
   color: #ffffff;
+  margin: 0 auto;
 }
 
 .header-btn:hover,
@@ -140,9 +180,11 @@ body {
 
 .hero {
   background: #2f303a;
-  width: 1200px;
+  /* width: 1200px; */
   padding-top: 200px;
   padding-bottom: 280px;
+  margin-bottom: 90px;
+  /* padding-left: 452px; */
 }
 
 .hero-title {
@@ -158,6 +200,11 @@ body {
 }
 
 /* ---------- Feature Section ---------- */
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 94px;
+}
 
 .feature-title {
   font-weight: 700;
@@ -176,6 +223,12 @@ body {
 
 .our-commands {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-technology {
+  margin-bottom: 120px;
 }
 
 .our-technology-title {
@@ -184,6 +237,12 @@ body {
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-title-color);
+  margin-bottom: 50px;
+}
+
+.our-technology-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .our-commands-title {
@@ -191,10 +250,25 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
   color: var(--secondary-title-color);
 }
 
+.comands-border {
+  background-color: #fff;
+  border-right: 2px solid #eeeeee;
+  border-left: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  border-top: 0;
+}
+.our-commands-list {
+  display: flex;
+  justify-content: space-between;
+}
 .our-commands-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -203,6 +277,7 @@ body {
 }
 
 .our-commands-workspace {
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -212,8 +287,10 @@ body {
 /* ---------- Footer ---------- */
 
 .footer {
+  padding-top: 60px;
+  margin-bottom: 20px;
   background-color: #2f303a;
-  width: 1600px;
+  /* width: 1600px; */
 }
 
 .footer-logo {
@@ -307,4 +384,17 @@ body {
 
 .hidden-title {
   display: none;
+}
+
+.cards-border {
+  margin: 0;
+  padding: 0;
+  width: calc(370px - 2px);
+  height: 110px;
+  margin-bottom: 30px;
+
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 0;
 }

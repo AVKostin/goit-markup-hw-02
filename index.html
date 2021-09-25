@@ -26,7 +26,7 @@
           <a href="index.html" class="header-logo link accent"
             >Web<span class="header-logo-text">Studio</span></a
           >
-          <ul class="header-list list header-container">
+          <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link currentLink" href="./index.html"
                 >Студия</a
@@ -40,31 +40,37 @@
             </li>
           </ul>
         </nav>
+
+        <!--             хедер контакты                    -->
+
+        <div class="header-contact">
+          <a
+            class="header-contacts-link link accent"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a
+            class="header-contacts-link link tel-color"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </div>
       </div>
-
-      <!--             хедер контакты                    -->
-
-      <a
-        class="header-contacts-link link accent container"
-        href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="header-contacts-link link tel-color" href="tel:+380961111111"
-        >+38 096 111 11 11</a
-      >
     </header>
 
-    <!--                  главная часть                   -->
+    <!--                  Hero                   -->
 
     <main>
       <section class="hero container">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title container">
+          Эффективные решения для вашего бизнеса
+        </h1>
         <button class="header-btn btn" type="button">Заказать услугу</button>
       </section>
 
       <!--             секция "наши особенности"       -->
 
-      <section class="feature">
+      <section class="feature container">
         <h3 class="feature-title">Внимание к деталям</h3>
         <p class="feature-title-text">
           Идейные соображения, а также начало повседневной работы по
@@ -91,7 +97,7 @@
 
       <!--     секция "чем мы занимаемся"        -->
 
-      <section class="our-technology">
+      <section class="our-technology container">
         <h2 class="our-technology-title">Чем мы занимаемся</h2>
         <ul class="our-technology-list">
           <li class="our-technology-item list">
@@ -123,56 +129,58 @@
 
       <!--     секция "наша команда"        -->
 
-      <section class="our-commands">
+      <section class="our-commands container">
         <h2 class="our-commands-title">Наша команда</h2>
-        <ul class="our-commands-list list">
-          <li class="our-commands-item">
-            <img
-              src="./images/img-1.jpg"
-              alt="Игорь Демьяненко"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-commands-name">Игорь Демьяненко</h3>
-            <p lang="en" class="our-commands-workspace">Product Manager</p>
-          </li>
-          <li class="our-commands-item">
-            <img
-              src="./images/img-2.jpg"
-              alt="Ольга Репина"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-commands-name">Ольга Репина</h3>
-            <p lang="en" class="our-commands-workspace">Frontend Developer</p>
-          </li>
-          <li class="our-commands-item">
-            <img
-              src="./images/img-3.jpg"
-              alt="Николай Тарасов"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-commands-name">Николай Тарасов</h3>
-            <p lang="en" class="our-commands-workspace">Markrting</p>
-          </li>
-          <li class="our-commands-item">
-            <img
-              src="./images/img-4.jpg"
-              alt="Михаил Ермаков"
-              width="270"
-              height="260"
-            />
-            <h3 class="our-commands-name">Михаил Ермаков</h3>
-            <p lang="en" class="our-commands-workspace">UI Designer</p>
-          </li>
-        </ul>
+        <div>
+          <ul class="our-commands-list list">
+            <li class="our-commands-item comands-border">
+              <img
+                src="./images/img-1.jpg"
+                alt="Игорь Демьяненко"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-commands-name">Игорь Демьяненко</h3>
+              <p lang="en" class="our-commands-workspace">Product Manager</p>
+            </li>
+            <li class="our-commands-item comands-border">
+              <img
+                src="./images/img-2.jpg"
+                alt="Ольга Репина"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-commands-name">Ольга Репина</h3>
+              <p lang="en" class="our-commands-workspace">Frontend Developer</p>
+            </li>
+            <li class="our-commands-item comands-border">
+              <img
+                src="./images/img-3.jpg"
+                alt="Николай Тарасов"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-commands-name">Николай Тарасов</h3>
+              <p lang="en" class="our-commands-workspace">Markrting</p>
+            </li>
+            <li class="our-commands-item comands-border">
+              <img
+                src="./images/img-4.jpg"
+                alt="Михаил Ермаков"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-commands-name">Михаил Ермаков</h3>
+              <p lang="en" class="our-commands-workspace">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!--       адреса, телефоны, мэйлы      -->
 
-    <footer class="footer">
+    <footer class="footer container">
       <a href="./index.html" class="footer-logo link accent"
         >Web<span class="footer-logo-text">Studio</span></a
       >

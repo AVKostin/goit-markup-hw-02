@@ -12,40 +12,50 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--       хедер навигация        -->
     <header class="header">
-      <nav class="header-navigation">
-        <a href="index.html" class="header-logo link accent"
-          >Web<span class="header-logo-text">Studio</span></a
-        >
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link" href="./index.html">Студия</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link currentLink" href="./portfolio.html"
-              >Портфолио</a
-            >
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="index.html" class="header-logo link accent"
+            >Web<span class="header-logo-text">Studio</span></a
+          >
+          <ul class="header-list list">
+            <li class="header-item">
+              <a class="header-link link currentLink" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <!--       хедер контакты        -->
+        <!--             хедер контакты                    -->
 
-      <a
-        class="header-contacts-link link accent"
-        href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="header-contacts-link link tel-color" href="tel:+380961111111"
-        >+38 096 111 11 11</a
-      >
+        <div class="header-contact">
+          <a
+            class="header-contacts-link link accent"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <a
+            class="header-contacts-link link tel-color"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </div>
+      </div>
     </header>
     <main>
       <!--      Портфолио - секция наши проекты     -->
@@ -85,8 +95,10 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">Технокряк</h3>
-            <p class="our-projects-description">Веб-сайт</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">Технокряк</h3>
+              <p class="our-projects-description">Веб-сайт</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -95,10 +107,12 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">
-              Постер <span lang="en">Orlean vs Golden Star</span>
-            </h3>
-            <p class="our-projects-description">Дизайн</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">
+                Постер <span lang="en">Orlean vs Golden Star</span>
+              </h3>
+              <p class="our-projects-description">Дизайн</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -107,10 +121,12 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">
-              Ресторан <span lang="en">Seafood</span>
-            </h3>
-            <p class="our-projects-description">Приложение</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">
+                Ресторан <span lang="en">Seafood</span>
+              </h3>
+              <p class="our-projects-description">Приложение</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -119,10 +135,12 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">
-              Проект <span lang="en">Prime</span>
-            </h3>
-            <p class="our-projects-description">Маректинг</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">
+                Проект <span lang="en">Prime</span>
+              </h3>
+              <p class="our-projects-description">Маректинг</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -131,10 +149,12 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">
-              Проект <span lang="en">Boxes</span>
-            </h3>
-            <p class="our-projects-description">Приложение</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">
+                Проект <span lang="en">Boxes</span>
+              </h3>
+              <p class="our-projects-description">Приложение</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -143,10 +163,12 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">
-              <span lang="en">Inspiration has no Borders</span>
-            </h3>
-            <p class="our-projects-description">Веб-сайт</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">
+                <span lang="en">Inspiration has no Borders</span>
+              </h3>
+              <p class="our-projects-description">Веб-сайт</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -155,10 +177,12 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">
-              Издание <span lang="en">Limited Edition</span>
-            </h3>
-            <p class="our-projects-description">Дизайн</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">
+                Издание <span lang="en">Limited Edition</span>
+              </h3>
+              <p class="our-projects-description">Дизайн</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -167,8 +191,12 @@
               width="370"
               height="294"
             />
-            <h3 class="our-projects-name">Проект <span lang="en">LAB</span></h3>
-            <p class="our-projects-description">Маркетинг</p>
+            <div class="cards-border">
+              <h3 class="our-projects-name">
+                Проект <span lang="en">LAB</span>
+              </h3>
+              <p class="our-projects-description">Маркетинг</p>
+            </div>
           </li>
           <li class="our-projects-item">
             <img
@@ -177,8 +205,10 @@
               width="370"
               height="294"
             />
-            <h3 lang="en" class="our-projects-name">Growing Business</h3>
-            <p class="our-projects-description">Приложение</p>
+            <div class="cards-border">
+              <h3 lang="en" class="our-projects-name">Growing Business</h3>
+              <p class="our-projects-description">Приложение</p>
+            </div>
           </li>
         </ul>
       </section>
