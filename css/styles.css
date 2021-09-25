@@ -180,7 +180,7 @@ body {
 
 .hero {
   background: #2f303a;
-  /* width: 1200px; */
+  width: 1600px;
   padding-top: 200px;
   padding-bottom: 280px;
   margin-bottom: 90px;
@@ -222,6 +222,7 @@ body {
 /* ---------- Our Technology ---------- */
 
 .our-commands {
+  width: 1600px;
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -254,13 +255,12 @@ body {
   color: var(--secondary-title-color);
 }
 
-.comands-border {
+.commands-border {
   background-color: #fff;
-  border-right: 2px solid #eeeeee;
-  border-left: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
-  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 2px #757575;
 }
+
 .our-commands-list {
   display: flex;
   justify-content: space-between;
@@ -276,6 +276,12 @@ body {
   color: var(--secondary-text-color);
 }
 
+.our-commands-item {
+  /* margin: 0 auto; */
+
+  /* display: block; */
+}
+
 .our-commands-workspace {
   padding-bottom: 30px;
   font-size: 16px;
@@ -288,9 +294,14 @@ body {
 
 .footer {
   padding-top: 60px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: #2f303a;
-  /* width: 1600px; */
+  width: 1600px;
+}
+
+.footer-list {
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
